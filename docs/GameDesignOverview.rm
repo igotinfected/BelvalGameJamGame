@@ -1,0 +1,21 @@
+
+## Game Play
+
+-   **Overview**    
+    -   A puzzle game in which a character needs to get from it’s starting point to the goal, a frame.
+    -   The character is a ball with the Vitruvian man drawing.
+    -   It will be a single screen with platforms and an incomplete way to reach the goal.
+    -   The player will need to add items to the level, based on Da Vinci’s drawings, in order to help the character to reach the goal.
+        
+-   **Game principals**:
+    -   Part one: *Building screen*.
+        -   The player will be presented with an incomplete platform level in the centre part of the screen.
+        -   To the right there will be a toolbox with items inspired by Leonardo Da Vinci’s inventions.
+        -   The player will have to take each tool from the toolbox and drag to the screen.
+            -   The player could drag, move rotate and sometimes stretch the parts to fit them exactly to the right place.
+        -   Each part has different properties, with different effect on the ball or the environment.   
+    -   Part Two: *Playing screen*.
+        -   The playing screen will be a full screen display of the level plus the player’s additions from the previous part.
+        -   A trigger will start the ball rolling, abiding to physics and the game level.     
+        -   The player could interact with his own elements to help propel the ball to the desired location.
+
