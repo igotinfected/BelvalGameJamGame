@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragStopper : MonoBehaviour
+public class Globals : MonoBehaviour
 {
     public static bool dragEnabled = true;
+    public static int currentLevel = 0;
+    public static string levelsName = "game-level";
 }

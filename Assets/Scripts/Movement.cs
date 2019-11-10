@@ -22,13 +22,12 @@ public class Movement : MonoBehaviour {
 	
     // Checks if the mouse button is pressed
 	void OnMouseDown() {
-		drag = DragStopper.dragEnabled;
+		drag = Globals.dragEnabled;
 		if (myRigidbody) myRigidbody.isKinematic = true;
 	}
 	
     // Checks if the mouse button is released
 	void OnMouseUp() {
-		Debug.Log(drag);
         // Update flags
 		if (drag == true)
 			if (myRigidbody) myRigidbody.isKinematic = wasKinematic;

@@ -10,13 +10,13 @@ public class PlayGame : MonoBehaviour, IPointerClickHandler
 	
 	void Start () {
 		ballRigidbody.simulated = false;
-        DragStopper.dragEnabled = true;
+        Globals.dragEnabled = true;
 	}
 
 
 	public void OnPointerClick(PointerEventData eventData) {
 		ballRigidbody.simulated = true;
-		DragStopper.dragEnabled = false;
+		Globals.dragEnabled = false;
 		Destroy(gameObject);
 	}
 }
