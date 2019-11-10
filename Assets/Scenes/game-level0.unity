@@ -448,12 +448,12 @@ PrefabInstance:
     - target: {fileID: 4543625295716045050, guid: 194aa3ff4f101ec4e9dce0f4c59577fb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8003502
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 4543625295716045050, guid: 194aa3ff4f101ec4e9dce0f4c59577fb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.48283386
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 4543625295716045050, guid: 194aa3ff4f101ec4e9dce0f4c59577fb,
         type: 3}
@@ -503,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 4543625295716045049, guid: 194aa3ff4f101ec4e9dce0f4c59577fb,
         type: 3}
       propertyPath: dropParachuteTimer
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 194aa3ff4f101ec4e9dce0f4c59577fb, type: 3}
@@ -609,11 +609,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 20.109001
       objectReference: {fileID: 0}
-    - target: {fileID: 6295099452196038574, guid: c48c973b7653dcfdf84c55b3dc6654e5,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6295099452196038573, guid: c48c973b7653dcfdf84c55b3dc6654e5,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -628,6 +623,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_EnableCollision
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295099452196038574, guid: c48c973b7653dcfdf84c55b3dc6654e5,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6295099452196038574, guid: c48c973b7653dcfdf84c55b3dc6654e5,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48c973b7653dcfdf84c55b3dc6654e5, type: 3}
@@ -686,6 +691,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disabled: 0
+--- !u!114 &1391104449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391104447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12172c5d3c9a80733a6f33a945561da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 50
 --- !u!4 &1391104453 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6295099452196038561, guid: c48c973b7653dcfdf84c55b3dc6654e5,

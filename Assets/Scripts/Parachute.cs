@@ -22,7 +22,7 @@ public class Parachute : MonoBehaviour
         if (ball != null && Time.time - time < dropParachuteTimer)
         {
             gameObject.transform.position = ball.transform.position + new Vector3(0,1);
-            ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 250));
+            ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 225));
         }
     }
 
