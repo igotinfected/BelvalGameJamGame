@@ -8,6 +8,7 @@ public class PlayGame : MonoBehaviour, IPointerClickHandler
 {
 	public Rigidbody2D ballRigidbody;
 
+
 	void Start () {
         ballRigidbody.simulated = false;
         Globals.dragEnabled = true;
@@ -16,6 +17,16 @@ public class PlayGame : MonoBehaviour, IPointerClickHandler
 	public void OnPointerClick(PointerEventData eventData) {
 		ballRigidbody.simulated = true;
 		Globals.dragEnabled = false;
+        UnlockHinges();
         Destroy(gameObject);
 	}
+
+    private void UnlockHinges()
+    {
+     GameObject[] hinges = GameObject.FindGameObjectsWithTag("Hinge");
+        foreach(GameObject hinge in hinges)
+        {
+            hinge.GetComponent<Rigidbody2D>().freezeRotation = false;
+        }
+    }
 }
