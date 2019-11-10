@@ -612,12 +612,12 @@ PrefabInstance:
     - target: {fileID: 6295099452196038573, guid: c48c973b7653dcfdf84c55b3dc6654e5,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -23.41
+      value: -23.77
       objectReference: {fileID: 0}
     - target: {fileID: 6295099452196038573, guid: c48c973b7653dcfdf84c55b3dc6654e5,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 3.55
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 6295099452196038573, guid: c48c973b7653dcfdf84c55b3dc6654e5,
         type: 3}
