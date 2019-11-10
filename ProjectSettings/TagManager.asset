@@ -7,6 +7,7 @@ TagManager:
   - EndFrame
   - VituvianBall
   - levelFrame
+  - ActionItems
   layers:
   - Default
   - TransparentFX
