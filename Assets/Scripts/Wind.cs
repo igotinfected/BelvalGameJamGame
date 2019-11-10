@@ -10,8 +10,8 @@ public class Wind : MonoBehaviour
     {
         if (collision.gameObject.tag == "VituvianBall")
         {
-            Vector2 wind = collision.transform.position - this.transform.position;
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(wind);
+            Vector2 wind = (collision.transform.position - this.transform.position).normalized;
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(wind * windForceMultiplier);
         }
     }
 }
