@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayGame : MonoBehaviour, IPointerClickHandler
 {
-	public Rigidbody2D ballRigidbody = null ;
+	public Rigidbody2D ballRigidbody;
 	
 	void Start () {
 		ballRigidbody.simulated = false;
