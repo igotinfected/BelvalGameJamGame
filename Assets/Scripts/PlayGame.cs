@@ -15,6 +15,7 @@ public class PlayGame : MonoBehaviour, IPointerClickHandler
 
 	public void OnPointerClick(PointerEventData eventData) {
 		ballRigidbody.simulated = true;
+		DragStopper.dragEnabled = false;
 		Destroy(gameObject);
 	}
 }

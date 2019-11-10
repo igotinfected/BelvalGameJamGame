@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour {
 	
     // Checks if the mouse button is pressed
 	void OnMouseDown() {
-		drag = transform.parent.dragEnabled;
+		drag = DragStopper.dragEnabled;
 		if (myRigidbody) myRigidbody.isKinematic = true;
 	}
 	

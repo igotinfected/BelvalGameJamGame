@@ -4,17 +4,5 @@ using UnityEngine;
 
 public class DragStopper : MonoBehaviour
 {
-    public bool dragEnabled;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static bool dragEnabled = true;
 }

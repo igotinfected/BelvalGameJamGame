@@ -8,14 +8,16 @@ public class GameComplete : MonoBehaviour
 
     public void Start()
     {
-        //victoryObject.enabled = false;
+        victoryObject.SetActive(false);
     }
-    
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "VituvianBall")
         {
-            Destroy(victoryObject);
+            victoryObject.SetActive(true);
+            gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
         }
     }
 }
