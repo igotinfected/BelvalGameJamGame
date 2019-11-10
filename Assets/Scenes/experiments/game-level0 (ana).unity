@@ -1749,6 +1749,7 @@ GameObject:
   - component: {fileID: 1296490176}
   - component: {fileID: 1296490177}
   - component: {fileID: 1296490175}
+  - component: {fileID: 1296490181}
   m_Layer: 0
   m_Name: buildingblock-cube
   m_TagString: Untagged
@@ -1804,6 +1805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba31747c5ec32400ebe5796afb4435c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabled: 0
 --- !u!61 &1296490178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1898,6 +1900,19 @@ RectTransform:
   m_AnchoredPosition: {x: 5.66, y: 1.35}
   m_SizeDelta: {x: 60.561317, y: 8.96}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1296490181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296490174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12172c5d3c9a80733a6f33a945561da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 30
 --- !u!1 &1445930147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,7 +2420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784316174}
   m_LocalRotation: {x: -0, y: -0, z: 0.02036804, w: 0.9997926}
-  m_LocalPosition: {x: 5.52, y: -0.89, z: 0}
+  m_LocalPosition: {x: 6.1, y: -0.86, z: 0}
   m_LocalScale: {x: 0.09288003, y: 0.06358711, z: 0.058397327}
   m_Children: []
   m_Father: {fileID: 1851288680}
@@ -2498,6 +2513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba31747c5ec32400ebe5796afb4435c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabled: 0
 --- !u!114 &1784316180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2569,6 +2585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12172c5d3c9a80733a6f33a945561da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateSpeed: 10
 --- !u!1 &1851288679
 GameObject:
   m_ObjectHideFlags: 0

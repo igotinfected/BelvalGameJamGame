@@ -10,7 +10,7 @@
          private bool _isRotating;
 
         
-	    public float rotateSpeed = 300f;
+	    public float rotateSpeed = 50f;
 
          void Start () {
              _sensitivity = 0.4f;
@@ -39,7 +39,7 @@
          /// </summary>
          void OnMouseOver () {
              
-             if (Input.GetKey (KeyCode.Z)) {
+             if (Input.GetKey (KeyCode.LeftShift)) {
                 var dir=Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
                 var angle= Mathf.Atan2(dir.y, dir.x)* Mathf.Rad2Deg;
                 transform.rotation=Quaternion.AngleAxis(angle, Vector3.forward);
