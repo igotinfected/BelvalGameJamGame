@@ -11,7 +11,10 @@ public class placement_rules : MonoBehaviour
     }
     //trigger when overlap, collision on touch
     void OnTriggerStay2D(Collider2D collision){
-      if(collision.gameObject.tag=="levelFrame")
+        if (collision.gameObject.tag == "levelFrame")
+        {
+
+        }
     }
     
 
