@@ -4,17 +4,18 @@ using UnityEngine.SceneManagement;
 
 public class GameComplete : MonoBehaviour
 {
-    public Canvas victoryCanvas;
+    public GameObject victoryObject;
 
     public void Start()
     {
-        victoryCanvas.enabled = false;
+        //victoryObject.enabled = false;
     }
+    
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "VituvianBall")
         {
-            victoryCanvas.enabled = true;
+            Destroy(victoryObject);
         }
     }
 }

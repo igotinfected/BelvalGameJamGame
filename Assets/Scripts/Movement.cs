@@ -6,11 +6,11 @@ public class Movement : MonoBehaviour {
 	private bool drag;					// True if is being dragged
 	private Rigidbody2D myRigidbody;	// Reference to the GameObject's Rigidbody2D
 	private bool wasKinematic;			// Flag indicating whether or not the Ridigbody
-
+	
 	// Use this for initialization
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody2D>();
-		wasKinematic = myRigidbody.isKinematic;
+		wasKinematic = myRigidbody ? myRigidbody.isKinematic : false;
 	}
 
 	// Update is called once per frame
@@ -22,16 +22,16 @@ public class Movement : MonoBehaviour {
 	
     // Checks if the mouse button is pressed
 	void OnMouseDown() {
-		drag = true;
-		myRigidbody.isKinematic = true;
+		drag = transform.parent.dragEnabled;
+		if (myRigidbody) myRigidbody.isKinematic = true;
 	}
 	
     // Checks if the mouse button is released
 	void OnMouseUp() {
-
+		Debug.Log(drag);
         // Update flags
 		if (drag == true)
-			myRigidbody.isKinematic = wasKinematic;
+			if (myRigidbody) myRigidbody.isKinematic = wasKinematic;
 			drag = false;
 	}
 

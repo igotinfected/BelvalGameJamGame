@@ -6,10 +6,15 @@ using UnityEngine.UI;
 
 public class PlayGame : MonoBehaviour, IPointerClickHandler
 {
-	public Rigidbody2D ballRigidBody = null ;
+	public Rigidbody2D ballRigidbody = null ;
 	
+	void Start () {
+		ballRigidbody.simulated = false;
+	}
+
+
 	public void OnPointerClick(PointerEventData eventData) {
-		ballRigidBody.simulated = true;
+		ballRigidbody.simulated = true;
 		Destroy(gameObject);
 	}
 }
