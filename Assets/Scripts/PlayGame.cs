@@ -7,16 +7,16 @@ using UnityEngine.UI;
 public class PlayGame : MonoBehaviour, IPointerClickHandler
 {
 	public Rigidbody2D ballRigidbody;
-	
+
+    private GameObject[] gameObjects;
 	void Start () {
-		ballRigidbody.simulated = false;
+        ballRigidbody.simulated = false;
         Globals.dragEnabled = true;
 	}
-
 
 	public void OnPointerClick(PointerEventData eventData) {
 		ballRigidbody.simulated = true;
 		Globals.dragEnabled = false;
-		Destroy(gameObject);
+        Destroy(gameObject);
 	}
 }
