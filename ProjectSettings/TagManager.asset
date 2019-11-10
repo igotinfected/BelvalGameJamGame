@@ -8,6 +8,7 @@ TagManager:
   - VituvianBall
   - levelFrame
   - ActionItems
+  - Hinge
   layers:
   - Default
   - TransparentFX
