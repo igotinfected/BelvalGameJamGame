@@ -8,7 +8,6 @@ public class PlayGame : MonoBehaviour, IPointerClickHandler
 {
 	public Rigidbody2D ballRigidbody;
 
-    private GameObject[] gameObjects;
 	void Start () {
         ballRigidbody.simulated = false;
         Globals.dragEnabled = true;

@@ -8,7 +8,7 @@ public class Wind : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "VituvianBall")
+        if (collision.gameObject.tag == "VituvianBall")
         {
             Vector2 wind = collision.transform.position - this.transform.position;
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(wind);
