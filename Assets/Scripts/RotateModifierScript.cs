@@ -9,6 +9,9 @@
          private Vector3 _rotation;
          private bool _isRotating;
 
+        
+	    public float rotateSpeed = 300f;
+
          void Start () {
              _sensitivity = 0.4f;
              _rotation = Vector3.zero;
@@ -35,20 +38,23 @@
          /// over the GUIElement or Collider.
          /// </summary>
          void OnMouseOver () {
-           
-             if (Input.GetMouseButtonDown (1)) {
-                 Debug.Log ("bruh");
+             
+             if (Input.GetKey (KeyCode.Z)) {
+                var dir=Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+                var angle= Mathf.Atan2(dir.y, dir.x)* Mathf.Rad2Deg;
+                transform.rotation=Quaternion.AngleAxis(angle, Vector3.forward);
+                 /*Debug.Log ("bruh");
                  // rotating flag
                  _isRotating = true;
 
                  // store mouse
-                 _mouseReference = Input.mousePosition;
+                 _mouseReference = Input.mousePosition; */
              
              }
          }
         private void OnMouseDown() {
             // rotating flag
-             _isRotating = false;
+            // _isRotating = false;
         }
          
 
