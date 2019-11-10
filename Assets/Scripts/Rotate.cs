@@ -9,6 +9,6 @@ public class Rotate : MonoBehaviour
 
     private void OnMouseDown()
     {
-        transform.Rotate(new Vector3(0, 0, 45));
+        if (Globals.dragEnabled) transform.Rotate(new Vector3(0, 0, 45));
     }
 }

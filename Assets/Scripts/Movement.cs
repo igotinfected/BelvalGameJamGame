@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Movement : MonoBehaviour {
+	public bool disabled;
 
 	private bool drag;					// True if is being dragged
 	private Rigidbody2D myRigidbody;	// Reference to the GameObject's Rigidbody2D
@@ -22,7 +23,7 @@ public class Movement : MonoBehaviour {
 	
     // Checks if the mouse button is pressed
 	void OnMouseDown() {
-		drag = Globals.dragEnabled;
+		drag = Globals.dragEnabled && !disabled;
 		if (myRigidbody) myRigidbody.isKinematic = true;
 	}
 	
