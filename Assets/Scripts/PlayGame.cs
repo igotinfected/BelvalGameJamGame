@@ -10,6 +10,7 @@ public class PlayGame : MonoBehaviour, IPointerClickHandler
 	
 	void Start () {
 		ballRigidbody.simulated = false;
+        DragStopper.dragEnabled = true;
 	}
 
 
