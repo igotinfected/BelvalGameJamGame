@@ -18,7 +18,6 @@ public class Parachute : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Time.time - time);
         if (ball != null && Time.time - time < dropParachuteTimer)
         {
             gameObject.transform.position = ball.transform.position + new Vector3(0,1);
