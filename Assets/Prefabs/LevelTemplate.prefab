@@ -1937,7 +1937,6 @@ GameObject:
   - component: {fileID: 8215615557982049684}
   - component: {fileID: 8215615557982049683}
   - component: {fileID: 8215615557982049682}
-  - component: {fileID: 8215615557982049681}
   - component: {fileID: 8215615557982049680}
   m_Layer: 5
   m_Name: Back
@@ -2056,19 +2055,6 @@ MonoBehaviour:
           m_StringArgument: LevelSelect
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8215615557982049681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8215615557982049710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e84f11f638bb2251a8fa59fe3109c56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballRigidbody: {fileID: 0}
 --- !u!114 &8215615557982049680
 MonoBehaviour:
   m_ObjectHideFlags: 0
