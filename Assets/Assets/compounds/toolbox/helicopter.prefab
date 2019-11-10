@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 6349107708813235398}
   - component: {fileID: 6349107708813235397}
   - component: {fileID: 6349107708813235402}
+  - component: {fileID: 6057623840466527151}
   - component: {fileID: 6349107708813235401}
-  - component: {fileID: 7779007751085932009}
   m_Layer: 0
   m_Name: helicopter
   m_TagString: Untagged
@@ -150,6 +150,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.88, y: 6.77}
   m_EdgeRadius: 0
+--- !u!114 &6057623840466527151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6349107708813235396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12172c5d3c9a80733a6f33a945561da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 50
 --- !u!114 &6349107708813235401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,15 +175,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba31747c5ec32400ebe5796afb4435c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7779007751085932009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6349107708813235396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 287569ee1f08abd4ca4c47ababa1a68d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  disabled: 0
