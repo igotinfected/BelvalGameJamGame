@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class placement_rules : MonoBehaviour {
+public class placement_rules : MonoBehaviour
+{
     // Start is called before the first frame update
-    void Start () {
+    void Start()
+    {
 
     }
     //trigger when overlap, collision on touch
-    void OnTriggerStay2D (Collider2D collision) {
+    void OnTriggerStay2D(Collider2D collision){
+        if (collision.gameObject.tag == "levelFrame")
+        {
 
-        Debug.Log ("touching frame");
 
-        gameObject.GetComponent<Renderer> ().material.color = Color.red;
-
+        }
     }
-    void OnTriggerExit2D (Collider2D other) {
-        gameObject.GetComponent<Renderer> ().material.color = Color.white;
-
-    }
+    
 
 }
